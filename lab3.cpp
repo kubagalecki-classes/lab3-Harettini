@@ -34,14 +34,15 @@ void id(Figura& A)
 int main()
 {
     Kwadrat KA(4);
-    id(KA);
+    // id(KA);
     Figura DS = static_cast< Figura >(KA);
 
-    id(DS);
+    // id(DS);
 
-    Figura* f  = new Kwadrat{54};
-    Kolo*   GF = static_cast< Kolo* >(f);
-    id(*GF);
+    Figura* f;
+    f        = new Kwadrat{54};
+    Kolo* GF = static_cast< Kolo* >(f);
+    // id(*GF);
 
     if (dynamic_cast< Kwadrat* >(f))
         std::cout << "to działa"
