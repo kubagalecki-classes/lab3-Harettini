@@ -13,8 +13,8 @@ Statek* s;
    w = w + pom;
     if(dynamic_cast < Zaglowiec* > (s)) z++;
     
-    if(w >= towar)    return z;
-    z=100;
+    if(w >= towar)    return w;
+    
     delete s;
  }
 }
