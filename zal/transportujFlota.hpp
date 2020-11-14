@@ -8,8 +8,8 @@ Stocznia stocznia{};
 Statek* s;
  while (wyslane<towar)
  {s = stocznia();
- wyslane=wyslane+s->transportuj;
- if(dynamic_cast<Zaglowiec>(s))zagle++;
+ wyslane=wyslane+s->transportuj();
+ if(dynamic_cast<Zaglowiec*>(s))zagle++;
  delete s;
  }
     return zagle;
