@@ -6,7 +6,7 @@ unsigned int transportujFlota(unsigned int towar)
 { if(towar==0)    return 0;
 unsigned int z=0, w=0, pom;
 Stocznia stocznia{};
-Zaglowiec* za;
+Zaglowiec* za = new Zaglowiec;
 Statek* s;
  while (1)
  {s = stocznia();
