@@ -42,4 +42,14 @@ int main()
     Figura* f  = new Kwadrat{54};
     Kolo*   GF = static_cast< Kolo* >(f);
     id(*GF);
+
+    if (dynamic_cast< Kwadrat* >(f))
+        std::cout << "to działa"
+                  << "\n";
+    if (dynamic_cast< Kolo* >(f))
+        std::cout << "to nie powinno"
+                  << "\n";
+    if (dynamic_cast< Figura* >(f))
+        std::cout << "cooo????"
+                  << "\n";
 }
