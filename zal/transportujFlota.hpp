@@ -11,8 +11,10 @@ Statek* s;
  {s = stocznia();
    pom = s->transportuj();
    w = w + pom;
-    if(dynamic_cast < Zaglowiec* > (s))z++;
-    delete s;
+    if(dynamic_cast < Zaglowiec* > (s)) z++;
+    
     if(w >= towar)    return z;
+    z=100;
+    delete s;
  }
 }
