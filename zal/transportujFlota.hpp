@@ -9,10 +9,10 @@ Stocznia stocznia{};
 Statek* s;
  while (wyslane<=towar)
  {s = stocznia();
- pom=s->transportuj();
- wyslane=wyslane+pom;
- if(dynamic_cast<Zaglowiec*>(s))zagle++;
- delete s;
+   pom=s->transportuj();
+   wyslane=wyslane+pom;
+    if((bool)dynamic_cast<Zaglowiec*>(s))zagle++;
+    delete s;
  }
     return zagle;
 }
