@@ -3,7 +3,8 @@
 #include "Stocznia.hpp"
 
 unsigned int transportujFlota(unsigned int towar)
-{int wyslane=0, zagle=0;
+{ 
+unsigned int zagle=0, wyslane=0;
 Stocznia stocznia{};
 Statek* s;
  while (wyslane<towar)
