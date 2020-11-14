@@ -6,13 +6,14 @@ unsigned int transportujFlota(unsigned int towar)
 { if(towar==0)    return 0;
 unsigned int z=0, w=0, pom;
 Stocznia stocznia{};
+Zaglowiec* za;
 Statek* s;
  while (1)
  {s = stocznia();
    pom = s->transportuj();
    w = w + pom;
-   z++;
-    if(dynamic_cast < Tankowiec* > (s)) z--;
+ 
+    if(dynamic_cast < Zaglowiec* > (s)==dynamic_cast < Zaglowiec* > (za)) z++;
     if(w >= towar)    return z;
     
     delete s;
