@@ -4,7 +4,7 @@
 
 unsigned int transportujFlota(unsigned int towar)
 { if(towar==0)    return 0;
-unsigned int z=0, w=0, pom;
+unsigned int z=1, w=0, pom;
 Stocznia stocznia{};
 Statek* s;
  while (1)
